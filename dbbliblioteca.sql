@@ -81,7 +81,14 @@ insert into tblivros(id_livros,nome_livros,id_cartegoria,id_autor,data_pub,preco
 insert into tblivros(id_livros,nome_livros,id_cartegoria,id_autor,data_pub,preco_livro,id_editora,isbn13,isbn10)
 	                values(1," mad max 2011",85,3,"1960/02/30","50,99",12,"424544454","4945644");
 
- alter table tbcategoria modify column int;
+ alter table tbcategoria modify column idcategoria int;
+ alter table tbeditora modify column idcategoria int;
+ alter table tblivros modify column id_livros int,
+ alter table tblivros modify column id_cartegoria int,
+ alter table tblivros modify column id_autor int,
+ alter table tblivros modify column id_editora int,
+
+
 
 select*from tbautores;
 select*from tbcategoria;
